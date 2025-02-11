@@ -48,7 +48,9 @@
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
   .social-icons {
     margin-top: 10px;
@@ -58,6 +60,10 @@
     color: white;
     font-size: 24px;
     text-decoration: none;
+  }
+  .social-icons img {
+    width: 30px;
+    height: 30px;
   }
 </style>
 
@@ -96,8 +102,14 @@
 <footer>
   <p>Minhas Redes Sociais:</p>
   <div class="social-icons">
-    <a href="https://www.instagram.com/seu_perfil" target="_blank">📷</a>
-    <a href="https://www.linkedin.com/in/seu_perfil" target="_blank">💼</a>
-    <a href="https://wa.me/seu_numero" target="_blank">📱</a>
+    <a href="https://www.instagram.com/seu_perfil" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/in/seu_perfil" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+    <a href="https://wa.me/seu_numero" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
   </div>
 </footer>
