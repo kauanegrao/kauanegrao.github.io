@@ -5,75 +5,85 @@
 
 <style>
   body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #eef2f3;
-    color: #333;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eef2f3;
+      color: #333;
   }
   .container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
   }
   nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    background: #0056b3;
-    color: white;
-    border-radius: 10px 10px 0 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      background: #0056b3;
+      color: white;
+      border-radius: 10px 10px 0 0;
   }
   nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
   }
   nav a:hover {
-    text-decoration: underline;
+      text-decoration: underline;
   }
   .content {
-    padding: 20px;
-    text-align: left;
+      padding: 20px;
+      text-align: left;
   }
   h1 {
-    color: #0056b3;
-    text-align: center;
+      color: #0056b3;
+      text-align: center;
   }
-  .skills, .education, .projects {
-    margin-top: 20px;
-    padding: 15px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  .section {
+      margin-top: 20px;
   }
   footer {
-    background: #0056b3;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+      background: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
   }
   .social-icons {
-    margin-top: 10px;
+      margin-top: 10px;
   }
   .social-icons a {
-    margin: 0 10px;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
+      margin: 0 10px;
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
   }
   .social-icons img {
-    width: 30px;
-    height: 30px;
+      width: 30px;
+      height: 30px;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+      .container {
+          margin: 20px;
+          padding: 20px;
+      }
+      nav {
+          flex-direction: column;
+      }
+      .social-icons a {
+          margin: 0 5px;
+      }
   }
 </style>
 
@@ -86,34 +96,34 @@
 <div class="container">
   {#if currentPage === 'home'}
     <div class="content">
-      <h1>KAUÃ RODRIGUES NEGRÃO</h1>
-      <p><strong>Localização:</strong> Três Lagoas - MS</p>
+      <h1>Kauã Rodrigues Negrão</h1>
+      <p><strong>Idade:</strong> 18 anos</p>
+      <p><strong>Localização:</strong> Jardim Novo Aeroporto, Três Lagoas - MS</p>
       <p><strong>Telefone:</strong> (67) 99204-9293</p>
       <p><strong>Email:</strong> kauarodriguesnegrao@gmail.com</p>
-      <p><strong>Data de Nascimento:</strong> 22/05/2006</p>
     </div>
   {:else if currentPage === 'sobre'}
     <div class="content">
-      <h1>Resumo Profissional</h1>
-      <p>Tenho experiência como atendente em restaurantes e também trabalho com higienização de ar-condicionados. Essas atividades me deram conhecimento em atendimento ao cliente e habilidades técnicas básicas.</p>
-      <p>Tenho experiência em manutenção, higienização e instalação de ar-condicionados, adquirida através de trabalhos realizados junto ao meu pai. Tenho também conhecimento na área de elétrica, o que amplia minhas competências técnicas e práticas.</p>
-      <p>Atualmente, estou cursando Tecnologia da Informação (TI), o que me permite integrar conhecimentos técnicos e tecnológicos, proporcionando uma abordagem abrangente e inovadora em minhas atividades profissionais.</p>
-      <div class="skills">
+      <h1>Sobre Mim</h1>
+      <p>Sou estudante de Ensino Médio e Técnico em Informática no Instituto Federal do Mato Grosso do Sul (IFMS), com conclusão prevista para dezembro de 2025. Tenho interesse em estagiar na área da informática e busco adquirir experiência para aplicar meus conhecimentos técnicos.</p>
+      <div class="section">
+        <h2>Objetivo</h2>
+        <p>Estágio na área da informática, com foco no desenvolvimento de soluções e no aprimoramento das minhas habilidades técnicas.</p>
+      </div>
+      <div class="section">
+        <h2>Formação Acadêmica</h2>
+        <p><strong>Ensino Médio:</strong> Instituto Federal do Mato Grosso do Sul (Conclusão em Dezembro de 2025)</p>
+        <p><strong>Técnico em Informática:</strong> Instituto Federal do Mato Grosso do Sul (Conclusão em Dezembro de 2025)</p>
+      </div>
+      <div class="section">
         <h2>Habilidades</h2>
         <ul>
-          <li>Atendimento ao cliente</li>
-          <li>Manutenção e instalação de ar-condicionados</li>
+          <li>Conhecimento do pacote Office</li>
           <li>Conhecimento em elétrica</li>
-          <li>Habilidades tecnológicas em TI</li>
+          <li>Comunicação eficaz</li>
+          <li>Adaptabilidade</li>
+          <li>Inovação e criatividade</li>
         </ul>
-      </div>
-      <div class="education">
-        <h2>Formação Acadêmica</h2>
-        <p><strong>Cursando:</strong> Tecnologia da Informação</p>
-      </div>
-      <div class="projects">
-        <h2>Projetos</h2>
-        <p>Desenvolvimento de um site pessoal utilizando Svelte.</p>
       </div>
     </div>
   {:else if currentPage === 'contato'}
