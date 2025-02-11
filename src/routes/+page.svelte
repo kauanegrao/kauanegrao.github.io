@@ -78,7 +78,7 @@
     {/if}
   </div>
 
-  <a href="/gostos">gostos</a>
+
 
   
   
